@@ -1,11 +1,12 @@
 import React from 'react'
 import { StyledHeader } from './Header.styled'
+import Logo from "../../assets/MyTestApp.png" 
 
 const Header = () => {
   return (
     <StyledHeader>
       <header>
-        <h2>MyTestApp</h2>
+        <img src={Logo} alt="logo" />
       </header>
     </StyledHeader>
   )

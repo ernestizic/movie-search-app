@@ -13,9 +13,10 @@ function App() {
 	useEffect(() => {
 		const fetchMovies = async () => {
 			const res = await axios.get(
-				'http://www.omdbapi.com/?s=flash?type=movie&apikey=b829faac'
+				'http://www.omdbapi.com/?s=flash&apikey=b829faac'
 			);
 			setMovies(res.data.Search);
+			console.log(res.data);
 		};
 		fetchMovies();
 	}, []);
@@ -32,7 +33,7 @@ function App() {
 			<Header />
 			<Hero />
 			<Searchbar searchMovie={searchMovie} />
-			<Movies movies={movies}/>
+			<Movies movies={movies} />
 		</div>
 	);
 }

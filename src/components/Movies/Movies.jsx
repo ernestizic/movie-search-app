@@ -5,6 +5,7 @@ const Movies = (movies) => {
     console.log(movies)
 	return (
 		<StyledMovies>
+            <p>Movie</p>
 			<MovieBoxes>
                 {movies && movies.movies.map((movie)=> (
                     <div className='box' key={movie.imdbID}>

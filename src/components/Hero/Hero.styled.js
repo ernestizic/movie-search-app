@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import banner from '../../assets/banner.png';
+import banner from '../../assets/banner-min.png';
 
 export const StyledHero = styled.div`
 	border: 1px solid black;

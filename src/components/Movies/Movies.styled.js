@@ -5,6 +5,9 @@ export const StyledMovies = styled.div`
 	@media (max-width: 576px) {
 		margin: 20px;
 	}
+	p{
+		margin-bottom: 10px;
+	}
 `;
 export const MovieBoxes = styled.div`
 	overflow: scroll;
@@ -15,11 +18,9 @@ export const MovieBoxes = styled.div`
 		border-radius: 12px;
 		background: #000;
 		color: #fff;
-		margin: 0px 5px;
+		margin-right: 5px;
 		min-height: 230px;
 		min-width: 250px;
-		padding-top: 100px;
-        padding-left: 5px;
-        padding-right: 5px;
+		padding: 100px 5px 0 5px;
 	}
 `;
