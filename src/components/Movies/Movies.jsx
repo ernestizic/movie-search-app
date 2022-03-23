@@ -7,7 +7,7 @@ const Movies = (movies) => {
 		<StyledMovies>
             <p>Movie</p>
 			<MovieBoxes>
-                {movies && movies.map((movie)=> (
+                {movies && movies.movies.map((movie)=> (
                     <div className='box' key={movie.imdbID}>
                         <p>{movie.Title}</p>
                     </div>
