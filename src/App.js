@@ -8,22 +8,23 @@ import Searchbar from './components/Search/Searchbar';
 
 function App() {
 	const [movies, setMovies] = useState([]);
-	// const [isLoading, setIsLoading] = useState(true);
+
+	const apikey = process.env.REACT_APP_API_KEY
 
 	useEffect(() => {
 		const fetchMovies = async () => {
 			const res = await axios.get(
-				'http://www.omdbapi.com/?s=flash&apikey=b829faac'
+				`http://www.omdbapi.com/?s=flash&apikey=${apikey}`
 			);
 			setMovies(res.data.Search);
 			console.log(res.data);
 		};
 		fetchMovies();
-	}, []);
+	}, [apikey]);
 
 	const searchMovie = async (keyword) => {
 		const res = await axios.get(
-			`http://www.omdbapi.com/?s=${keyword}&apikey=b829faac`
+			`http://www.omdbapi.com/?s=${keyword}&apikey=${apikey}`
 		);
 		setMovies(res.data.Search);
 	};
