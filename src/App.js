@@ -17,7 +17,6 @@ function App() {
 				`http://www.omdbapi.com/?s=flash&apikey=${apikey}`
 			);
 			setMovies(res.data.Search);
-			console.log(res.data);
 		};
 		fetchMovies();
 	}, [apikey]);

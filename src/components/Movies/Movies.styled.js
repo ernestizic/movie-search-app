@@ -13,7 +13,7 @@ export const MovieBoxes = styled.div`
 	overflow: scroll;
 	display: flex;
 
-	.box {
+	.series, .movie {
         text-align: center;
 		border-radius: 12px;
 		background: #000;
@@ -21,6 +21,7 @@ export const MovieBoxes = styled.div`
 		margin-right: 5px;
 		min-height: 230px;
 		min-width: 250px;
+		max-width: 250px;
 		padding: 100px 5px 0 5px;
 	}
 `;
